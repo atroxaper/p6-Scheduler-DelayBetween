@@ -1,0 +1,21 @@
+{
+  "name": "Scheduler::DelayBetween",
+  "description": "Standard Scheduler cue() sub with possibility to set a delay between each code execution",
+  "version": "1.3.1",
+  "perl": "6.*",
+  "auth": "github:atroxaper",
+  "depends": [],
+  "build-depends": [],
+  "test-depends": [
+    "Test"
+  ],
+  "provides": {
+    "Scheduler::DelayBetween": "lib/Scheduler/DelayBetween.pm6"
+  },
+  "resources": [],
+  "license": "Artistic-2.0",
+  "tags": [
+    "SCHEDULER"
+  ],
+  "source-url": "git://github.com/atroxaper/p6-Scheduler-DelayBetween.git"
+}
