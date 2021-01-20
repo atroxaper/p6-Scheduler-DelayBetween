@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/atroxaper/p6-Scheduler-DelayBetween.svg?branch=master)](https://travis-ci.org/atroxaper/p6-Scheduler-DelayBetween)
+[![Build Status](https://github.com/atroxaper/p6-Scheduler-DelayBetween/workflows/build/badge.svg)](https://github.com/atroxaper/p6-Scheduler-DelayBetween/actions)
 
 # NAME
 

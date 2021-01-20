@@ -10,7 +10,7 @@
     "Test"
   ],
   "provides": {
-    "Scheduler::DelayBetween": "lib/Scheduler/DelayBetween.pm6"
+    "Scheduler::DelayBetween": "lib/Scheduler/DelayBetween.rakumod"
   },
   "resources": [],
   "license": "Artistic-2.0",
