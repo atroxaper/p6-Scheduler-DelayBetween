@@ -3,9 +3,9 @@ use Test;
 use lib 'lib';
 use Scheduler::DelayBetween;
 
-plan 13;
+plan 14;
 
-my $cancel;
+my Cancellation $cancel;
 my atomicint $count ⚛= 0;
 sub check($expected-cound, $title) {
 	$cancel.cancel;
@@ -20,6 +20,11 @@ my &stop = { --⚛$enough < 1 }
 
 dies-ok { cue(&code, :1delay-between, :3every) }, 'every is forbidden';
 dies-ok { cue(&code, :1delay-between, :1in, :2at) }, 'at and in is forbidden';
+
+cue(&code);
+sleep(8);
+is ⚛$count, 1, ':1times original works well';
+$count ⚛= 0;
 
 $cancel = cue(&code, :1delay-between, at => (now + 3));
 sleep(11.5);
